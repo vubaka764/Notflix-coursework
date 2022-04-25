@@ -1,0 +1,29 @@
+ 
+use('NotFLIX'); 
+ 
+// The drop() command destroys all data from a collection. 
+// Make sure you run it against the correct database and collection. 
+db.data.drop(); 
+
+db.data.insertMany([ 
+  { '_id': 1, 'item': 'accountID', 'price': 0.80, 'quantity': 2 }, 
+  { '_id': 2, 'item': 'userName', 'price': 0.90, 'quantity': 1 }, 
+  { '_id': 3, 'item': 'titleID', 'price': 0.70, 'quantity': 10 }, 
+  { '_id': 4, 'item': 'userAction', 'price': 0.85, 'quantity':  20 }, 
+  { '_id': 5, 'item': 'dataAndtime', 'price': 0.90, 'quantity': 10 }, 
+  { '_id': 6, 'item': 'pointOfinteraction', 'price': 0.75, 'quantity': 5 }, 
+  { '_id': 7, 'item': 'typeOfinteraction', 'price': 0.65, 'quantity': 10 } 
+]); 
+
+use('NotFLIX'); 
+db.getCollection('data') 
+  .find( 
+    { 
+    }, 
+    { 
+      item: 1 
+    } 
+  ) 
+  .sort({ 
+      item: 1 
+  });
