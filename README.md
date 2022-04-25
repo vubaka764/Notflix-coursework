@@ -1,6 +1,6 @@
 # Notflix-coursework
 
-ignore notflix, ise notflix2
+ignore notflix, correc file is notflix2
 
 pull to  mobaxterm
 mkdir 6130COMP
@@ -13,4 +13,5 @@ cd njinx to deploy cluster
 
 "sudo docker-compose ls" (this will show all the clusters running)
 
-if you need to delete 
+if code is changed in mobaxterm, run the command "sudo docker-compose up, then test the changes using https://127.0.01
+
